@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/515640d61a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input type="text" class="form-control" autocomplete="off" autofocus="on" id="search-city-input"
+                placeholder="Type a City" style="width: 25%;" />
+            <button type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
+            <button type="submit" class="btn btn-primary"> <i class="fas fa-map-marker-alt" id="user-location"></i>
+            </button>
+        </form>
+        <h2>
+            <div id="cercle">
+                <h3>
+                    <div id="city"></div>
+                    <span id="degree"></span><a href="#" id="celcius">°C</a> | <a href="#" id="fahrenheit">°F</a>
+                    <br />
+                    <span id="weather-condition"></span>
+                    <br />
+                    <span id="date"></span>
+                    <br />
+                    <span id="time"></span>
+                    </p>
+                </h3>
+            </div>
+        </h2>
+        <div class="card-group">
+            <div class="card text-center h-50" style="width: 4rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tue
+                        <p>08/03</p>
+                    </h5>
+                    <p class="card-text">Sunny
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        <span>14°C</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card text-center h-50" style="width: 4rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Wed
+                        <p>09/03</p>
+                    </h5>
+                    <p class="card-text">Sunny
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        <span>15°C</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card text-center h-50" style="width: 4rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Thu
+                        <p>10/03</p>
+                    </h5>
+                    <p class="card-text">Rain
+                        <br />
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                        <br />
+                        <span>10°C</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card text-center h-50" style="width: 4rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Fri
+                        <p>11/03</p>
+                    </h5>
+                    <p class="card-text">Cloudy
+                        <br />
+                        <i class="fas fa-cloud"></i>
+                        <br />
+                        <span>8°C</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card text-center h-60" style="width: 4rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Sat
+                        <p>12/03</p>
+                    </h5>
+                    <p class="card-text">Sunny
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        <span>12°C</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
