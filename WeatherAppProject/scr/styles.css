@@ -1,0 +1,44 @@
+body {
+  background-image: url(https://i.pinimg.com/736x/1a/30/da/1a30dad646fee903739a1a3a672e5800.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+h3 {
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+button {
+  display: inline;
+  margin-top: -2px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+  display: inline;
+  margin-top: 18px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+#cercle {
+  width: 250px;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 125px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.card-group {
+  margin-top: 40px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.fa-sun {
+  color: #e9c999;
+  text-align: center;
+}
+.fa-cloud {
+  color: gray;
+}
