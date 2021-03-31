@@ -42,3 +42,8 @@ button {
 .fa-cloud {
   color: gray;
 }
+.openSource {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
