@@ -47,3 +47,9 @@ button {
   color: #000000;
   font-weight: 600;
 }
+#weather-condition {
+  text-transform: capitalize;
+}
+img {
+  width: 50px;
+}
