@@ -17,6 +17,9 @@ button {
   margin-top: -2px;
   box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
 }
+img {
+  width: 50px;
+}
 .form-control {
   display: inline;
   margin-top: 18px;
@@ -50,6 +53,18 @@ button {
 #weather-condition {
   text-transform: capitalize;
 }
-img {
-  width: 50px;
+.active {
+  color: black;
+  cursor: default;
+}
+
+#celsius:hover {
+  text-decoration: none;
+}
+
+#fahrenheit {
+  text-decoration: none;
+}
+#celsius {
+  text-decoration: none;
 }

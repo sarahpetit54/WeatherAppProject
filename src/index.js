@@ -43,9 +43,8 @@ timeElement.innerHTML = formatTime(currentTime2);
 
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#degree").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#degree").innerHTML = Math.round(celsiusTemperature);
+
   let description = document.querySelector("#weather-condition");
   description.innerHTML = response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
@@ -53,6 +52,7 @@ function displayWeather(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusTemperature = response.data.main.temp;
   }
 
 function searchCity(city) {
@@ -67,6 +67,7 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+
 function searchLocation(position) {
   let apiKey = "2bc05ebef1d18dc15fe697066bb20bd0";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -78,28 +79,35 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
-
 let currentLocationButton = document.querySelector("#user-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Paris");
-
 function convertTemp(event) {
   event.preventDefault();
+  celsius.classList.remove("active");
+  conversion.classList.add("active");
   let degree = document.querySelector("#degree");
   let temperature = degree.innerHTML;
-  degree.innerHTML = Math.round((temperature * 9) / 5 + 32);
+  degree.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
 }
+
 function revertTemp(event) {
   event.preventDefault();
+  celsius.classList.add("active");
+  conversion.classList.remove("active");
   let degree = document.querySelector("#degree");
-  let temperature = degree.innerHTML;
-  degree.innerHTML = Math.round(((temperature - 32) * 5) / 9);
+  degree.innerHTML = Math.round(celsiusTemperature);
 }
+
+let celsiusTemperature = null;
+
 let conversion = document.querySelector("#fahrenheit");
 conversion.addEventListener("click", convertTemp);
 
-let celcius = document.querySelector("#celcius");
-celcius.addEventListener("click", revertTemp);
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", revertTemp);
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
+
+searchCity("Paris");
