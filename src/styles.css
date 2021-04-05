@@ -10,8 +10,12 @@ h3 {
   font-weight: normal;
   text-align: center;
   position: relative;
-  top: 30px;
+  top: 25px;
 }
+p {
+margin-bottom: 0;  
+}
+
 button {
   display: inline;
   margin-top: -2px;
@@ -26,8 +30,8 @@ img {
   box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
 }
 #cercle {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background: #ffffff;
   border-radius: 125px;
   display: block;
