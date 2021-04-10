@@ -79,3 +79,6 @@ img {
 #celsius {
   text-decoration: none;
 }
+.minTemp {
+  opacity: 0.5;
+}

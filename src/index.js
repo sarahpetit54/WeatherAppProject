@@ -21,6 +21,34 @@ let day = days[now.getDay()];
 return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = [ "Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHTML = `<div class="card-group">`;
+
+  days.forEach(function (day) {
+forecastHTML = forecastHTML + `
+                <div class="card text-center h-50" style="width: 4rem;">
+                        <div class="card-body">
+                    <h5 class="card-title">${day}
+                        <p>08/03</p>
+                    </h5>
+                    <p class="card-text">Sunny
+                        <br />
+                        <i class="fas fa-sun"></i>
+                        <br />
+                        <span class="maxTemp">14°</span>
+                        <span class="minTemp">8°</span>
+                    </p>
+                    </div>
+                    </div>
+                </div>`;
+}
+)
+forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
@@ -39,6 +67,8 @@ function displayWeather(response) {
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   }
+
+  displayForecast();
 
 function searchCity(city) {
   let apiKey = "2bc05ebef1d18dc15fe697066bb20bd0";
