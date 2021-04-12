@@ -50,9 +50,8 @@ img {
 .card-group {
   margin-top: 40px;
   box-shadow: 3px 5px 6px rgba(238, 230, 230, 0.5);
-  filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
-
 .fa-sun {
   color: #e9c999;
   text-align: center;
