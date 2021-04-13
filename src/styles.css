@@ -12,13 +12,13 @@ body {
 #city {
   font-size: 40px;
 }
-h3 {
+.info {
   font-weight: normal;
   text-align: center;
   position: relative;
   top: 25px;
   font-size: 25px;
-  color: #ffffff;
+  color:#e3fa19;
 }
 p {
   margin-bottom: 0;
@@ -40,16 +40,20 @@ img {
 #cercle {
   width: 350px;
   height: 300px;
-  /*background: #ffffff;*/
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 125px;
   display: block;
   margin: 0 auto;
-  box-shadow: 3px 5px 6px rgba(238, 230, 230, 0.5);
+  box-shadow: 3px 8px 20px rgba(148, 142, 142, 0.938);
   backdrop-filter: blur(5px);
 }
 .card-group {
   margin-top: 40px;
-  box-shadow: 3px 5px 6px rgba(238, 230, 230, 0.5);
+  box-shadow: 3px 8px 20px rgba(148, 142, 142, 0.938);
+  color: #e3fa19;
+}
+.card {
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
 }
 .fa-sun {
@@ -68,7 +72,7 @@ img {
   text-transform: capitalize;
 }
 .active {
-  color: white;
+  color:#e3fa19;
   cursor: default;
 }
 #celsius:hover {
@@ -82,5 +86,5 @@ img {
   text-decoration: none;
 }
 .minTemp {
-  opacity: 0.5;
+  opacity: 0.6;
 }
