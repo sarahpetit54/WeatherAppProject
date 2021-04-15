@@ -16,17 +16,17 @@
     <form id="search-form">
         <input type="text" class="form-control" autocomplete="off" autofocus="on" id="search-city-input"
             placeholder="Type a City" style="width: 25%;" />
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-warning">
             <i class="fas fa-search"></i>
         </button>
-        <button type="button" class="btn btn-primary"> <i class="fas fa-map-marker-alt" id="user-location"></i>
+        <button type="button" class="btn btn-warning"> <i class="fas fa-map-marker-alt" id="user-location"></i>
         </button>
     </form>
         <h2>
             <div id="cercle">
                 <div class="info">
                     <div id="city"></div>
-                    <span id="degree"></span><a href="#" id="celsius" class="active">°C</a> | <a href="#" id="fahrenheit">°F</a>
+                    <span id="degree"></span><a href="#" id="celsius" class="active">°C |</a><a href="#" id="fahrenheit">°F</a>
                     <br />
                     <span id="weather-condition"></span>
                     <br />
@@ -43,7 +43,7 @@
         <br />
         <small>
             <a class="openSource" href="https://github.com/sarahpetit54/WeatherAppProject" target="_blank">Open-source code</a>
-            by Sarah Petit
+            <span class="sarah">by Sarah Petit</span>
         </small>
     </div>
     <script src="src/index.js"></script>

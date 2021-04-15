@@ -2,23 +2,24 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+  background-image: url(https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  max-width: 100%;
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
 }
 #city {
-  font-size: 40px;
+  font-size: 50px;
 }
 .info {
   font-weight: normal;
   text-align: center;
   position: relative;
-  top: 25px;
-  font-size: 25px;
-  color:#e3fa19;
+  top: 12px;
+  font-size: 20px;
+  color: #5b3625;
 }
 p {
   margin-bottom: 0;
@@ -32,15 +33,20 @@ button {
 img {
   width: 50px;
 }
+
+small {
+  margin-left: 75px;
+}
+
 .form-control {
   display: inline;
   margin-top: 18px;
   box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.2);
 }
 #cercle {
-  width: 350px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 450px;
+  height: 280px;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 125px;
   display: block;
   margin: 0 auto;
@@ -48,13 +54,14 @@ img {
   backdrop-filter: blur(5px);
 }
 .card-group {
-  margin-top: 40px;
+  margin-top: 35px;
   box-shadow: 3px 8px 20px rgba(148, 142, 142, 0.938);
-  color: #e3fa19;
+  color: #5b3625;
+  font-weight: 600;
 }
 .card {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
 }
 .fa-sun {
   color: #e9c999;
@@ -65,26 +72,36 @@ img {
 }
 .openSource {
   text-decoration: none;
-  color: #000000;
-  font-weight: 600;
+  color: #feae2e;
+  font-weight: 300;
 }
 #weather-condition {
   text-transform: capitalize;
 }
 .active {
-  color:#e3fa19;
+  color: #5b3625;
   cursor: default;
 }
 #celsius:hover {
   text-decoration: none;
 }
 
-#fahrenheit {
-  text-decoration: none;
+#degree {
+  font-size: 40px;
 }
+
+#fahrenheit,
 #celsius {
+  position: relative;
+  font-size: 20px;
+  top: -14px;
   text-decoration: none;
 }
+
 .minTemp {
   opacity: 0.6;
+}
+
+.sarah {
+  color: white;
 }
