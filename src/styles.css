@@ -35,7 +35,7 @@ img {
 }
 
 small {
-  margin-left: 75px;
+  margin-left: 80px;
 }
 
 .form-control {
@@ -58,6 +58,7 @@ small {
   box-shadow: 3px 8px 20px rgba(148, 142, 142, 0.938);
   color: #5b3625;
   font-weight: 600;
+  margin-bottom: -10px;
 }
 .card {
   background: rgba(255, 255, 255, 0.6);
@@ -81,16 +82,21 @@ small {
 .active {
   color: #5b3625;
   cursor: default;
-}
-#celsius:hover {
   text-decoration: none;
 }
-
+#celsius .active:hover {
+  text-decoration: none;
+}
 #degree {
   font-size: 40px;
 }
 
-#fahrenheit,
+#fahrenheit {
+  position: relative;
+  font-size: 20px;
+  top: -14px;
+  text-decoration: none;
+}
 #celsius {
   position: relative;
   font-size: 20px;
@@ -104,4 +110,6 @@ small {
 
 .sarah {
   color: white;
+  text-decoration: none;
+  font-weight: 300;
 }
