@@ -36,6 +36,7 @@ img {
 
 small {
   margin-left: 80px;
+  color: #ffffff;
 }
 
 .form-control {
@@ -74,7 +75,6 @@ small {
 .openSource {
   text-decoration: none;
   color: #feae2e;
-  font-weight: 300;
 }
 #weather-condition {
   text-transform: capitalize;
@@ -84,7 +84,8 @@ small {
   cursor: default;
   text-decoration: none;
 }
-#celsius .active:hover {
+.units .active:hover {
+  color: #5b3625;
   text-decoration: none;
 }
 #degree {
@@ -106,10 +107,4 @@ small {
 
 .minTemp {
   opacity: 0.6;
-}
-
-.sarah {
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
 }
