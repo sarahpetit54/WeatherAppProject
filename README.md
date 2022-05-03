@@ -17,4 +17,5 @@ This weather application is using real-time data from the OpenWeatherMap API - h
 HTML5, CSS3, Vanilla JS, WeatherMapAPI, Netlify
 <br/>
 <br/>
-![Screenshot WeatherApp](https://user-images.githubusercontent.com/79552516/166464454-afc5927f-9d87-4edb-b161-d0c4383110ae.png)
+
+![Screenshot WeatherApp (1)](https://user-images.githubusercontent.com/79552516/166473791-56c3505e-5316-497c-b9f5-8b3b61a93a99.png)
