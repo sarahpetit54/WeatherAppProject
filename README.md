@@ -2,7 +2,7 @@
 
 <h1>Description</h1>
 
-It was created as part of SheCodes workshop, hosted on Netlify. For the demo, please visit https://compassionate-yonath-8a6e6f.netlify.app/
+It was created as part of SheCodes workshop, hosted on Netlify. For the demo, please visit https://weather-app-by-sarah.netlify.app
 This weather application is using real-time data from the OpenWeatherMap API - https://openweathermap.org/. 
 
 <h1>Functionality</h1>
